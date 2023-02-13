@@ -18,3 +18,10 @@ string[] FindWords(string[] array)
     }
     return array;
 }
+
+System.Console.WriteLine("Сколько слов Вы введете?");
+int count = Convert.ToInt32(Console.ReadLine());
+string[] array = new string[count];
+System.Console.WriteLine("Введите слова, отделяя каждое слово клавишей Enter: ");
+FillArray(array); 
+FindWords(array);
